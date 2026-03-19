@@ -59,9 +59,9 @@ const Home = () => {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <img 
-                src="https://customer-assets.emergentagent.com/job_8719ada7-caea-424b-8eaa-a662dc68aa56/artifacts/z0ukr6xt_IMG_0747.jpeg" 
+                src="https://customer-assets.emergentagent.com/job_tech-glow-portfolio-1/artifacts/dr7k5w6p_9F40BA79-4030-422B-8E53-9382D85C0B61.png" 
                 alt="WebTech Logo" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </div>
 
