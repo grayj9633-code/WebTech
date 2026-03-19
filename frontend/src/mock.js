@@ -42,7 +42,7 @@ export const mockData = {
       id: 1,
       title: "658 Shopping Solutions",
       description: "A virtual shopping and errand service platform in Jamaica",
-      image: "https://customer-assets.emergentagent.com/job_8719ada7-caea-424b-8eaa-a662dc68aa56/artifacts/z0ukr6xt_IMG_0747.jpeg",
+      image: "https://customer-assets.emergentagent.com/job_tech-glow-portfolio-1/artifacts/o01mh3z6_19C93BA0-7E33-4E00-A4C8-114377125370.png",
       link: "https://errand-hub-jmd.preview.emergentagent.com/",
       tags: ["E-commerce", "Web App", "React"]
     },
