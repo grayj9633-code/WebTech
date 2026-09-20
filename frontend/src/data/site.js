@@ -36,8 +36,8 @@ export const SERVICES = [
     icon: 'Cog',
     title: 'Engine Diagnostics & Repair',
     desc: 'Professional engine diagnostics, troubleshooting, maintenance, and repair for heavy-duty trucks and commercial vehicles.',
-    image: '/images/service-engine.jpg',
-    alt: 'Technician performing diesel engine diagnostics on a heavy-duty semi truck in Macon, GA',
+    image: '/images/shop-engine-bay.jpg',
+    alt: 'Heavy-duty truck engine bay intake and cooling system serviced at Elite in Macon, GA',
   },
   {
     num: '02',
@@ -76,8 +76,8 @@ export const SERVICES = [
     icon: 'Wrench',
     title: 'Custom Engineering Solutions',
     desc: 'Custom repair, modification, fabrication, and engineering solutions for specialized commercial equipment and vehicle requirements.',
-    image: '/images/service-engineering.jpg',
-    alt: 'Custom fabrication and engineering work on commercial vehicle components',
+    image: '/images/shop-fabrication.jpg',
+    alt: 'Custom stainless steel fabrication and build-out by Elite Truck-Trailer Repair & Engineering',
   },
 ];
 

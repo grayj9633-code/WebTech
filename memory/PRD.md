@@ -35,6 +35,7 @@ Sticky nav with persistent Request Service CTA + mobile tap-to-call; hero with h
 - Privacy Policy & Terms of Service pages
 - Mobile verified: tap-to-call button, mobile menu, responsive layouts
 - Roadside Service section (2026-07-20): "Truck Down? We Come to You." with hazard-stripe accents, on-site service bullets, call/request CTAs, honest shop-hours note; "Roadside Assistance" added to form dropdown, marquee, SEO keywords & JSON-LD
+- Customer photo integration (2026-07-20): 5 owner-supplied photos processed (auto-cropped letterbox bars + finger smudge, color/contrast/sharpness graded) — new "Fresh From the Shop" asymmetric gallery section (all 5, with labels); real photos swapped into Engine Diagnostics (engine bay) and Custom Engineering (stainless fabrication) service cards
 
 ## Backlog
 - P0: Add real customer testimonials when the owner provides them (section slot reserved in nav/design)

@@ -7,6 +7,7 @@ import { ServicesGrid } from '../components/ServicesGrid';
 import { RoadsideSection } from '../components/RoadsideSection';
 import { WhyChoose } from '../components/WhyChoose';
 import { VehicleTypes } from '../components/VehicleTypes';
+import { GallerySection } from '../components/GallerySection';
 import { HowItWorks } from '../components/HowItWorks';
 import { CtaBanner } from '../components/CtaBanner';
 import { ContactSection } from '../components/ContactSection';
@@ -25,6 +26,7 @@ export default function HomePage() {
         <RoadsideSection />
         <WhyChoose />
         <VehicleTypes />
+        <GallerySection />
         <HowItWorks />
         <CtaBanner />
         <ContactSection />
