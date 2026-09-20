@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 220 13% 6%;
+        --foreground: 210 40% 98%;
+        --card: 222 18% 10%;
+        --card-foreground: 210 40% 98%;
+        --popover: 222 18% 10%;
+        --popover-foreground: 210 40% 98%;
+        --primary: 19 100% 50%;
+        --primary-foreground: 220 13% 6%;
+        --secondary: 217 19% 16%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 217 19% 16%;
+        --muted-foreground: 215 20% 65%;
+        --accent: 19 100% 50%;
+        --accent-foreground: 220 13% 6%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 217 19% 20%;
+        --input: 217 19% 20%;
+        --ring: 19 100% 50%;
+        --radius: 0.375rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-charcoal text-slate-100 font-sans antialiased;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    ::selection {
+        background: #ff5500;
+        color: #0d0e11;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #0d0e11;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #27303e;
+        border-radius: 8px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #ff5500;
+    }
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+@layer utilities {
+    .bg-grid-steel {
+        background-image:
+            linear-gradient(rgba(148, 163, 184, 0.055) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(148, 163, 184, 0.055) 1px, transparent 1px);
+        background-size: 44px 44px;
+    }
+    .bg-diamond {
+        background-image:
+            repeating-linear-gradient(45deg, rgba(148, 163, 184, 0.05) 0 2px, transparent 2px 16px),
+            repeating-linear-gradient(-45deg, rgba(148, 163, 184, 0.05) 0 2px, transparent 2px 16px);
+    }
+    .text-outline {
+        -webkit-text-stroke: 1.5px rgba(248, 250, 252, 0.16);
+        color: transparent;
+    }
+    .text-outline-dark {
+        -webkit-text-stroke: 1.5px rgba(15, 23, 42, 0.14);
+        color: transparent;
+    }
+    .clip-corner {
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 36px), calc(100% - 36px) 100%, 0 100%);
+    }
+    .clip-corner-sm {
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%);
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}

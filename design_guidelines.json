@@ -1,0 +1,209 @@
+{
+  "project_title": "Elite Truck-Trailer Repair & Engineering",
+  "business_info": {
+    "name": "Elite Truck-Trailer Repair & Engineering",
+    "address": "1480 6th St, Macon, GA 31206",
+    "phone": "(470) 870-6542",
+    "phone_raw": "4708706542",
+    "email": "eliterepair1480@gmail.com",
+    "hours": "Mon–Sat 9AM–5PM",
+    "services_summary": "Heavy-duty truck, semi-truck, trailer, coach, and heavy equipment repair, maintenance, diagnostics, and custom engineering — all makes & models."
+  },
+  "design_archetype": "THE PERFORMANCE PRO / HEAVY INDUSTRIAL TACTICAL",
+  "theme": {
+    "primary_mode": "dark_industrial",
+    "color_palette": {
+      "bg_primary": "#0D0E11",
+      "bg_surface": "#14171E",
+      "bg_surface_elevated": "#1C212B",
+      "text_primary": "#F8FAFC",
+      "text_secondary": "#94A3B8",
+      "text_muted": "#64748B",
+      "accent_safety_orange": "#FF5500",
+      "accent_orange_hover": "#E04B00",
+      "accent_orange_glow": "rgba(255, 85, 0, 0.25)",
+      "navy_steel": "#1E293B",
+      "border_dark": "#27303E",
+      "border_highlight": "#334155",
+      "card_bg": "#14171E",
+      "light_gray_section": "#F1F5F9",
+      "light_gray_text": "#0F172A"
+    }
+  },
+  "typography": {
+    "font_family_heading": "'Barlow Condensed', 'Oswald', sans-serif",
+    "font_family_body": "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+    "font_family_mono": "'JetBrains Mono', monospace",
+    "font_rules": [
+      "DO NOT use Inter or Roboto for headlines/H1/H2. Headlines MUST use uppercase Barlow Condensed/Oswald heavy weight (font-black / font-extrabold) with tracking-wider.",
+      "H1 max size is text-5xl md:text-6xl lg:text-7xl. Fluid scaling clamp without text overlap.",
+      "Overlines / badges must be text-xs or text-sm uppercase with wide tracking (tracking-[0.25em]) in Safety Orange.",
+      "Body text should be clean, highly legible inter with leading-relaxed."
+    ]
+  },
+  "visual_enhancers": {
+    "textures": "Subtle diamond-plate SVG patterns, industrial grid lines, subtle noise overlays, 1px steel borders",
+    "borders": "1px solid #27303E with hover transition to #FF5500",
+    "shadows": "Deep ambient drop shadows shadow-[0_10px_30px_rgba(0,0,0,0.5)] and inner glow highlights",
+    "glassmorphism": "backdrop-blur-md bg-[#0D0E11]/85 border-b border-[#27303E] z-50 for fixed navigation"
+  },
+  "layout_and_grid": {
+    "type": "THE TETRIS & HIGH DENSITY HYBRID",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing_scale": "Generous spacing. py-16 md:py-24 for main sections to give an expressive commercial aura."
+  },
+  "hero_section_spec": {
+    "type": "Kinetic Hero with Masked Line Headline Reveal & Parallax",
+    "headline": "HEAVY-DUTY TRUCK & TRAILER REPAIR YOU CAN DEPEND ON",
+    "subheadline": "Full-service commercial vehicle diagnostics, diesel overhaul, trailer chassis repair, and custom engineering solutions in Macon, Georgia.",
+    "primary_cta": {
+      "text": "Request Service",
+      "action": "scroll_to_contact_or_open_modal",
+      "test_id": "hero-request-service-btn"
+    },
+    "secondary_cta": {
+      "text": "Call (470) 870-6542",
+      "href": "tel:4708706542",
+      "test_id": "hero-call-now-btn"
+    },
+    "trust_banner": "Serving commercial vehicles • All makes & models • Professional technicians • Macon, GA",
+    "hero_image_overlay": "bg-gradient-to-r from-[#0D0E11] via-[#0D0E11]/80 to-transparent (max opacity 0.5 overlay so photo breathes)"
+  },
+  "sections_breakdown": [
+    {
+      "id": "hero",
+      "name": "Hero Section",
+      "features": ["Kinetic masked headline animation", "Parallax background image", "Quick call stats", "Dual high-contrast CTAs"]
+    },
+    {
+      "id": "trust-bar",
+      "name": "Quick Benefits / Trust Bar",
+      "items": [
+        {"title": "Heavy-Duty Specialists", "subtitle": "Semi-trucks, rigs & coaches"},
+        {"title": "All Makes & Models", "subtitle": "Cummins, Detroit, PACCAR, Volvo"},
+        {"title": "Experienced Technicians", "subtitle": "ASE & Master Diesel Certified"},
+        {"title": "Fast Reliable Turnaround", "subtitle": "Minimizing fleet downtime"}
+      ]
+    },
+    {
+      "id": "about",
+      "name": "About - Built to Keep Your Equipment Moving",
+      "description": "Dedicated heavy-duty repair & custom engineering garage located on 6th St in Macon, GA.",
+      "content": "Manifesto storytelling highlighting reliability, safety compliance, master mechanics, and precision engineering capability."
+    },
+    {
+      "id": "services",
+      "name": "Services Grid (6 Core Capabilities)",
+      "services_list": [
+        {
+          "title": "Engine Diagnostics & Repair",
+          "desc": "Advanced computer diagnostics, full engine overhauls, fuel system service, and performance tuning for diesel powertrains.",
+          "image": "https://images.unsplash.com/photo-1523559094051-53bac879eb80?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwyfHxzZW1pJTIwdHJ1Y2slMjBtZWNoYW5pYyUyMHJlcGFpciUyMHdvcmtzaG9wJTIwaGVhdnklMjBkdXR5JTIwZGllc2VsJTIwZW5naW5lfGVufDB8fHx8MTc4OTkyOTI2M3ww&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "title": "Brake System Repair",
+          "desc": "Air brake diagnostics, drum and disc replacement, ABS calibration, air dryer maintenance, and DOT brake safety compliance.",
+          "image": "https://images.pexels.com/photos/5733659/pexels-photo-5733659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        },
+        {
+          "title": "Drivetrain & Transmission",
+          "desc": "Eaton Fuller manual & automated transmission service, clutch replacement, differential rebuilds, and driveshaft balancing.",
+          "image": "https://images.pexels.com/photos/6720505/pexels-photo-6720505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        },
+        {
+          "title": "Trailer & Chassis Repair",
+          "desc": "Dry van, reefer, and flatbed structural repairs, kingpin alignment, landing gear fixes, door replacement, and roof sealing.",
+          "image": "https://images.unsplash.com/photo-1616432043562-3671ea2e5242?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwdHJhaWxlciUyMGNoYXNzaXMlMjBicmFrZSUyMGVuZ2luZSUyMHJlcGFpciUyMGhlYXZ5JTIwZXF1aXBtZW50fGVufDB8fHx8MTc4OTkyOTI3MHww&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "title": "Heavy Equipment Repair",
+          "desc": "Hydraulic system troubleshooting, cylinder rebuilding, heavy machinery maintenance, track/axle service, and field diagnostics.",
+          "image": "https://images.pexels.com/photos/7019371/pexels-photo-7019371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        },
+        {
+          "title": "Custom Engineering Solutions",
+          "desc": "Precision metal fabrication, custom bracketry, frame reinforcement, custom hydraulic piping, and specialized vehicle modifications.",
+          "image": "https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxzZW1pJTIwdHJ1Y2slMjBtZWNoYW5pYyUyMHJlcGFpciUyMHdvcmtzaG9wJTIwaGVhdnklMjBkdXR5JTIwZGllc2VsJTIwZW5naW5lfGVufDB8fHx8MTc4OTkyOTI2M3ww&ixlib=rb-4.1.0&q=85"
+        }
+      ]
+    },
+    {
+      "id": "why-choose",
+      "name": "Why Choose Elite",
+      "cards": [
+        {"title": "Macon's Local Fleet Partner", "desc": "Conveniently located at 1480 6th St with direct highway access for quick turnaround."},
+        {"title": "Certified Diesel Masters", "desc": "Trained technicians equipped with latest dealer-level diagnostic software for all major engines."},
+        {"title": "Custom Fabrication Lab", "desc": "In-house engineering capability to custom weld, align, and repair complex trailer structural damage."},
+        {"title": "Transparent Pricing", "desc": "Detailed upfront repair estimates without hidden shop fees or surprise markups."}
+      ]
+    },
+    {
+      "id": "vehicle-types",
+      "name": "Vehicle Types We Service",
+      "types": ["Semi-Trucks & Day Cabs", "Commercial Freight Trucks", "Trailers (Dry Van, Reefer, Flatbed)", "Coaches & Motorbuses", "Heavy Construction Equipment", "Commercial Fleet Vehicles"]
+    },
+    {
+      "id": "how-it-works",
+      "name": "How It Works - 3 Step Process",
+      "steps": [
+        {"step": "01", "title": "Schedule or Call", "desc": "Contact our Macon shop at (470) 870-6542 or fill out our online repair request form."},
+        {"step": "02", "title": "Diagnostic & Inspection", "desc": "Our team performs comprehensive diagnostic checks and provides a transparent quote."},
+        {"step": "03", "title": "Expert Repair & Delivery", "desc": "We perform precision repairs, road-test your rig, and return it safely to service."}
+      ]
+    },
+    {
+      "id": "cta-banner",
+      "name": "High-Impact Dark CTA Banner",
+      "headline": "Need Heavy-Duty Repair or Service Today?",
+      "subtext": "Keep your fleet compliant and on the road. Call our Macon shop now or request a quote online.",
+      "cta": "Call (470) 870-6542"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Section with Functional Service Form & Map Embed",
+      "form_fields": ["fullName", "companyName", "phone", "email", "vehicleType", "serviceNeeded", "message"],
+      "has_success_state": true,
+      "map_location": "1480 6th St, Macon, GA 31206"
+    }
+  ],
+  "image_urls": {
+    "hero_bg": "https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxzZW1pJTIwdHJ1Y2slMjBtZWNoYW5pYyUyMHJlcGFpciUyMHdvcmtzaG9wJTIwaGVhdnklMjBkdXR5JTIwZGllc2VsJTIwZW5naW5lfGVufDB8fHx8MTc4OTkyOTI2M3ww&ixlib=rb-4.1.0&q=85",
+    "about_workshop": "https://images.pexels.com/photos/7019365/pexels-photo-7019365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "service_engine": "https://images.unsplash.com/photo-1523559094051-53bac879eb80?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwyfHxzZW1pJTIwdHJ1Y2slMjBtZWNoYW5pYyUyMHJlcGFpciUyMHdvcmtzaG9wJTIwaGVhdnklMjBkdXR5JTIwZGllc2VsJTIwZW5naW5lfGVufDB8fHx8MTc4OTkyOTI2M3ww&ixlib=rb-4.1.0&q=85",
+    "service_brakes": "https://images.pexels.com/photos/5733659/pexels-photo-5733659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "service_drivetrain": "https://images.pexels.com/photos/6720505/pexels-photo-6720505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "service_trailer": "https://images.unsplash.com/photo-1616432043562-3671ea2e5242?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwdHJhaWxlciUyMGNoYXNzaXMlMjBicmFrZSUyMGVuZ2luZSUyMHJlcGFpciUyMGhlYXZ5JTIwZXF1aXBtZW50fGVufDB8fHx8MTc4OTkyOTI3MHww&ixlib=rb-4.1.0&q=85",
+    "service_equipment": "https://images.pexels.com/photos/7019371/pexels-photo-7019371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "service_engineering": "https://images.unsplash.com/photo-1565730350847-293cbe3fa4a3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwzfHxzZW1pJTIwdHJ1Y2slMjBtZWNoYW5pYyUyMHJlcGFpciUyMHdvcmtzaG9wJTIwaGVhdnklMjBkdXR5JTIwZGllc2VsJTIwZW5naW5lfGVufDB8fHx8MTc4OTkyOTI2M3ww&ixlib=rb-4.1.0&q=85",
+    "fleet_highway": "https://images.unsplash.com/photo-1720811559395-3ed8d1b16649?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHw0fHxzZW1pJTIwdHJ1Y2slMjBmbGVldCUyMGhpZ2h3YXklMjBjb21tZXJjaWFsJTIwdHJhbnNwb3J0YXRpb24lMjBsb2dpc2l0Y3N8ZW58MHx8fHwxNzg5OTI5MjcwfDA&ixlib=rb-4.1.0&q=85"
+  },
+  "component_paths": {
+    "navbar": "src/components/Navbar.js",
+    "hero": "src/components/Hero.js",
+    "trust_bar": "src/components/TrustBar.js",
+    "about": "src/components/AboutSection.js",
+    "services": "src/components/ServicesGrid.js",
+    "why_choose": "src/components/WhyChoose.js",
+    "vehicles": "src/components/VehicleTypes.js",
+    "how_it_works": "src/components/HowItWorks.js",
+    "cta_banner": "src/components/CtaBanner.js",
+    "contact": "src/components/ContactSection.js",
+    "footer": "src/components/Footer.js",
+    "privacy": "src/pages/PrivacyPolicy.js",
+    "terms": "src/pages/TermsOfService.js"
+  },
+  "instructions_to_main_agent": [
+    "You have .js files not .tsx files, so write all React components as .js files.",
+    "Import Lucide icons (Wrench, Truck, ShieldCheck, Phone, Mail, MapPin, Clock, Gauge, Disc, Cog, Cpu, CheckCircle2, ArrowRight) cleanly.",
+    "Implement Lenis smooth scrolling or Framer Motion scroll reveals for an award-winning craft feel.",
+    "Ensure sticky header has a persistent 'Request Service' button and a tap-to-call phone button for mobile.",
+    "Include data-testid attributes on ALL interactive elements (buttons, form inputs, links, call cards) according to testing specifications.",
+    "Form submission must validate fields, simulate a real loading state, and render a rich success confirmation message.",
+    "Create routing/pages for main landing page (/), Privacy Policy (/privacy), and Terms of Service (/terms) using React Router."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "no_ai_slop": "Avoid generic light SaaS templates. Use high contrast, heavy industrial borders, bold typography, safety orange highlights, and authentic commercial repair imagery.",
+    "data_test_ids": "Mandatory data-testid attributes on buttons, inputs, headers, navigation items, and forms.",
+    "contrast_check": "Ensure white/orange text on dark surfaces meets high contrast APCA standards."
+  }
+}
