@@ -162,5 +162,6 @@ export const SERVICE_OPTIONS = [
   'Heavy Equipment Repair',
   'Custom Engineering / Fabrication',
   'Preventive Maintenance',
+  'Roadside Assistance',
   'Other / Not Sure',
 ];

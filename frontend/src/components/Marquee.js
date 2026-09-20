@@ -4,6 +4,7 @@ const ITEMS = [
   'Drivetrain & Transmission',
   'Trailer & Chassis',
   'Heavy Equipment',
+  'Roadside Service',
   'Custom Engineering',
   'All Makes & Models',
   'Macon, Georgia',

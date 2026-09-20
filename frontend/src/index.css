@@ -96,6 +96,9 @@ html.lenis body {
     .clip-corner-sm {
         clip-path: polygon(0 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%);
     }
+    .bg-hazard {
+        background-image: repeating-linear-gradient(-45deg, #ff5500 0 14px, #0d0e11 14px 28px);
+    }
 }
 
 @layer base {

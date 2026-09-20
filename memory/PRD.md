@@ -34,6 +34,7 @@ Sticky nav with persistent Request Service CTA + mobile tap-to-call; hero with h
 - SEO: title, meta description, keywords, OG tags, AutoRepair JSON-LD, descriptive alts
 - Privacy Policy & Terms of Service pages
 - Mobile verified: tap-to-call button, mobile menu, responsive layouts
+- Roadside Service section (2026-07-20): "Truck Down? We Come to You." with hazard-stripe accents, on-site service bullets, call/request CTAs, honest shop-hours note; "Roadside Assistance" added to form dropdown, marquee, SEO keywords & JSON-LD
 
 ## Backlog
 - P0: Add real customer testimonials when the owner provides them (section slot reserved in nav/design)

@@ -4,6 +4,7 @@ import { TrustBar } from '../components/TrustBar';
 import { Marquee } from '../components/Marquee';
 import { AboutSection } from '../components/AboutSection';
 import { ServicesGrid } from '../components/ServicesGrid';
+import { RoadsideSection } from '../components/RoadsideSection';
 import { WhyChoose } from '../components/WhyChoose';
 import { VehicleTypes } from '../components/VehicleTypes';
 import { HowItWorks } from '../components/HowItWorks';
@@ -21,6 +22,7 @@ export default function HomePage() {
         <Marquee />
         <AboutSection />
         <ServicesGrid />
+        <RoadsideSection />
         <WhyChoose />
         <VehicleTypes />
         <HowItWorks />
