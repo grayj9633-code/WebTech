@@ -58,7 +58,7 @@ export const mockData = {
       id: 3,
       title: "Elite Trucking Repair",
       description: "A professional truck repair service website built to help customers find services, request assistance, and connect with Elite Trucking Repair.",
-      image: "/elite-trucking-repair.svg",
+      image: "/elite-trucking-repair.jpg",
       link: "https://elitetruckingrepair.com",
       tags: ["Truck Repair", "Business Website", "Responsive"]
     }
