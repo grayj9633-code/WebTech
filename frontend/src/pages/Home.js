@@ -198,14 +198,16 @@ const Home = () => {
                       </Badge>
                     ))}
                   </div>
-                  <a 
-                    href={project.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-[#0ea5e9] hover:text-[#06b6d4] font-semibold"
-                  >
-                    View Project <ExternalLink className="ml-2 w-4 h-4" />
-                  </a>
+                  {project.link && (
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-[#0ea5e9] hover:text-[#06b6d4] font-semibold"
+                    >
+                      View Project <ExternalLink className="ml-2 w-4 h-4" />
+                    </a>
+                  )}
                 </CardContent>
               </Card>
             ))}
