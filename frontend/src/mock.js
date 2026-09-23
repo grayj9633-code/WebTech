@@ -53,6 +53,14 @@ export const mockData = {
       image: "https://customer-assets.emergentagent.com/job_8719ada7-caea-424b-8eaa-a662dc68aa56/artifacts/z0ukr6xt_IMG_0747.jpeg",
       link: null,
       tags: ["Logistics", "Web Platform", "Real-time"]
+    },
+    {
+      id: 3,
+      title: "Elite Trucking Repair",
+      description: "A professional truck repair service website built to help customers find services, request assistance, and connect with Elite Trucking Repair.",
+      image: "/elite-trucking-repair.svg",
+      link: "https://elitetruckingrepair.com",
+      tags: ["Truck Repair", "Business Website", "Responsive"]
     }
   ],
   
