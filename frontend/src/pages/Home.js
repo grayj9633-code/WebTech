@@ -48,7 +48,6 @@ const Home = () => {
 
   return (
     <div className="relative">
-      {/* Header */}
       <header 
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled ? 'bg-[#0a0e17]/95 backdrop-blur-md border-b border-[#0ea5e9]/20' : 'bg-transparent'
@@ -56,7 +55,6 @@ const Home = () => {
       >
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            {/* Logo */}
             <div className="flex items-center space-x-2">
               <img 
                 src="/webtech-logo.svg" 
@@ -65,7 +63,6 @@ const Home = () => {
               />
             </div>
 
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <button onClick={() => scrollToSection('home')} className="text-gray-300 hover:text-[#0ea5e9] transition-colors">Home</button>
               <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-[#0ea5e9] transition-colors">Services</button>
@@ -74,7 +71,6 @@ const Home = () => {
               <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-[#0ea5e9] transition-colors">Contact</button>
             </div>
 
-            {/* Mobile Menu Button */}
             <button 
               className="md:hidden text-white p-2"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -83,7 +79,6 @@ const Home = () => {
             </button>
           </div>
 
-          {/* Mobile Menu */}
           {mobileMenuOpen && (
             <div className="md:hidden mt-4 pb-4 space-y-3">
               <button onClick={() => scrollToSection('home')} className="block w-full text-left text-gray-300 hover:text-[#0ea5e9] transition-colors py-2">Home</button>
@@ -96,7 +91,6 @@ const Home = () => {
         </nav>
       </header>
 
-      {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center justify-center pt-20">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto">
@@ -136,7 +130,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Section */}
       <section id="services" className="py-24 bg-[#0f1729]/50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
@@ -166,7 +159,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
       <section id="projects" className="py-24">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
@@ -180,13 +172,17 @@ const Home = () => {
                 key={project.id} 
                 className="bg-[#1a1f35]/80 border-[#0ea5e9]/20 hover:border-[#0ea5e9] overflow-hidden group cursor-pointer hover:shadow-2xl hover:shadow-[#0ea5e9]/20 transition-all duration-300"
               >
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden bg-[#1a1f35]">
                   <img 
                     src={project.image} 
                     alt={project.title} 
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className={`w-full h-64 transition-transform duration-500 ${
+                      project.id === 3
+                        ? 'object-contain p-5 group-hover:scale-105'
+                        : 'object-cover group-hover:scale-110'
+                    }`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1a1f35] to-transparent opacity-60"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1a1f35] to-transparent opacity-40 pointer-events-none"></div>
                 </div>
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-3 text-white">{project.title}</h3>
@@ -215,7 +211,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="py-24 bg-[#0f1729]/50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
@@ -246,7 +241,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="py-24">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
@@ -295,7 +289,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-[#0a0e17] border-t border-[#0ea5e9]/20 py-12">
         <div className="container mx-auto px-6">
           <div className="text-center">
