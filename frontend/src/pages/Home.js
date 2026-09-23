@@ -4,26 +4,15 @@ import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { mockData } from '../mock';
 import { 
-  Globe, 
-  Smartphone, 
-  ShoppingCart, 
-  Palette, 
-  Mail, 
-  Phone, 
-  ExternalLink,
-  Menu,
-  X,
-  Code2,
-  Zap,
-  Users,
-  Award
+  Globe, Smartphone, ShoppingCart, Palette, Mail, Phone, ExternalLink,
+  Menu, X, Code2, Zap, Users, Award
 } from 'lucide-react';
 
 const iconMap = {
-  'globe': Globe,
-  'smartphone': Smartphone,
+  globe: Globe,
+  smartphone: Smartphone,
   'shopping-cart': ShoppingCart,
-  'palette': Palette
+  palette: Palette
 };
 
 const Home = () => {
@@ -31,9 +20,7 @@ const Home = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -46,21 +33,25 @@ const Home = () => {
     }
   };
 
+  const openGmail = () => {
+    const subject = encodeURIComponent('Website Inquiry');
+    const body = encodeURIComponent('Hello WebTech,\n\nI would like to discuss a website or app project.\n\nThank you.');
+    window.open(
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${mockData.contact.email}&su=${subject}&body=${body}`,
+      '_blank',
+      'noopener,noreferrer'
+    );
+  };
+
   return (
     <div className="relative">
-      <header 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'bg-[#0a0e17]/95 backdrop-blur-md border-b border-[#0ea5e9]/20' : 'bg-transparent'
-        }`}
-      >
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-[#0a0e17]/95 backdrop-blur-md border-b border-[#0ea5e9]/20' : 'bg-transparent'
+      }`}>
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <img 
-                src="/webtech-logo.svg" 
-                alt="WebTech Logo" 
-                className="h-12 w-auto"
-              />
+              <img src="/webtech-logo.svg" alt="WebTech Logo" className="h-12 w-auto" />
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
@@ -71,10 +62,7 @@ const Home = () => {
               <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-[#0ea5e9] transition-colors">Contact</button>
             </div>
 
-            <button 
-              className="md:hidden text-white p-2"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
+            <button className="md:hidden text-white p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -100,29 +88,15 @@ const Home = () => {
                 Professional Web Development
               </Badge>
             </div>
-            
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="glow-text">{mockData.hero.headline}</span>
             </h1>
-            
-            <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto">
-              {mockData.hero.subheadline}
-            </p>
-            
+            <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto">{mockData.hero.subheadline}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                onClick={() => scrollToSection('projects')}
-                className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white px-8 py-6 text-lg font-semibold rounded-lg"
-                size="lg"
-              >
+              <Button onClick={() => scrollToSection('projects')} className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white px-8 py-6 text-lg font-semibold rounded-lg" size="lg">
                 {mockData.hero.ctaButtons[0].text}
               </Button>
-              <Button 
-                onClick={() => scrollToSection('contact')}
-                variant="outline"
-                className="border-[#0ea5e9] text-[#0ea5e9] hover:bg-[#0ea5e9]/10 px-8 py-6 text-lg font-semibold rounded-lg"
-                size="lg"
-              >
+              <Button onClick={() => scrollToSection('contact')} variant="outline" className="border-[#0ea5e9] text-[#0ea5e9] hover:bg-[#0ea5e9]/10 px-8 py-6 text-lg font-semibold rounded-lg" size="lg">
                 {mockData.hero.ctaButtons[1].text}
               </Button>
             </div>
@@ -136,15 +110,11 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">Services</h2>
             <p className="text-xl text-gray-400">Comprehensive solutions for your digital needs</p>
           </div>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {mockData.services.map((service) => {
               const IconComponent = iconMap[service.icon];
               return (
-                <Card 
-                  key={service.id} 
-                  className="bg-[#1a1f35]/80 border-[#0ea5e9]/20 hover:border-[#0ea5e9] hover:shadow-lg hover:shadow-[#0ea5e9]/20 transition-all duration-300 cursor-pointer group"
-                >
+                <Card key={service.id} className="bg-[#1a1f35]/80 border-[#0ea5e9]/20 hover:border-[#0ea5e9] hover:shadow-lg hover:shadow-[#0ea5e9]/20 transition-all duration-300 cursor-pointer group">
                   <CardContent className="p-8">
                     <div className="mb-6 inline-block p-4 bg-[#0ea5e9]/10 rounded-lg group-hover:bg-[#0ea5e9]/20 transition-colors">
                       <IconComponent className="w-8 h-8 text-[#0ea5e9]" />
@@ -165,23 +135,13 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">Featured Projects</h2>
             <p className="text-xl text-gray-400">Recent work that showcases my expertise</p>
           </div>
-          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {mockData.projects.map((project) => (
-              <Card 
-                key={project.id} 
-                className="bg-[#1a1f35]/80 border-[#0ea5e9]/20 hover:border-[#0ea5e9] overflow-hidden group cursor-pointer hover:shadow-2xl hover:shadow-[#0ea5e9]/20 transition-all duration-300"
-              >
+              <Card key={project.id} className="bg-[#1a1f35]/80 border-[#0ea5e9]/20 hover:border-[#0ea5e9] overflow-hidden group cursor-pointer hover:shadow-2xl hover:shadow-[#0ea5e9]/20 transition-all duration-300">
                 <div className="relative overflow-hidden bg-[#1a1f35]">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    className={`w-full h-64 transition-transform duration-500 ${
-                      project.id === 3
-                        ? 'object-contain p-5 group-hover:scale-105'
-                        : 'object-cover group-hover:scale-110'
-                    }`}
-                  />
+                  <img src={project.image} alt={project.title} className={`w-full h-64 transition-transform duration-500 ${
+                    project.id === 3 ? 'object-contain p-5 group-hover:scale-105' : 'object-cover group-hover:scale-110'
+                  }`} />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1a1f35] to-transparent opacity-40 pointer-events-none"></div>
                 </div>
                 <CardContent className="p-8">
@@ -189,18 +149,11 @@ const Home = () => {
                   <p className="text-gray-400 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tags.map((tag, index) => (
-                      <Badge key={index} className="bg-[#0ea5e9]/10 text-[#0ea5e9] border-[#0ea5e9]/30">
-                        {tag}
-                      </Badge>
+                      <Badge key={index} className="bg-[#0ea5e9]/10 text-[#0ea5e9] border-[#0ea5e9]/30">{tag}</Badge>
                     ))}
                   </div>
                   {project.link && (
-                    <a 
-                      href={project.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-[#0ea5e9] hover:text-[#06b6d4] font-semibold"
-                    >
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-[#0ea5e9] hover:text-[#06b6d4] font-semibold">
                       View Project <ExternalLink className="ml-2 w-4 h-4" />
                     </a>
                   )}
@@ -217,20 +170,14 @@ const Home = () => {
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">{mockData.about.title}</h2>
             </div>
-            
-            <p className="text-xl text-gray-300 leading-relaxed mb-12 text-center">
-              {mockData.about.bio}
-            </p>
-            
+            <p className="text-xl text-gray-300 leading-relaxed mb-12 text-center">{mockData.about.bio}</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {mockData.about.stats.map((stat, index) => {
                 const statIcons = [Code2, Zap, Users, Award];
                 const StatIcon = statIcons[index];
                 return (
                   <div key={index} className="text-center">
-                    <div className="mb-3 flex justify-center">
-                      <StatIcon className="w-8 h-8 text-[#0ea5e9]" />
-                    </div>
+                    <div className="mb-3 flex justify-center"><StatIcon className="w-8 h-8 text-[#0ea5e9]" /></div>
                     <div className="text-4xl font-bold text-[#0ea5e9] mb-2">{stat.value}</div>
                     <div className="text-gray-400">{stat.label}</div>
                   </div>
@@ -248,38 +195,24 @@ const Home = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">Get In Touch</h2>
               <p className="text-xl text-gray-400">{mockData.contact.availability}</p>
             </div>
-            
             <Card className="bg-[#1a1f35]/80 border-[#0ea5e9]/20 p-8 md:p-12">
               <CardContent className="space-y-8">
                 <div className="flex items-start space-x-4">
-                  <div className="p-3 bg-[#0ea5e9]/10 rounded-lg">
-                    <Mail className="w-6 h-6 text-[#0ea5e9]" />
-                  </div>
+                  <div className="p-3 bg-[#0ea5e9]/10 rounded-lg"><Mail className="w-6 h-6 text-[#0ea5e9]" /></div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2 text-white">Email</h3>
-                    <a href={`mailto:${mockData.contact.email}`} className="text-[#0ea5e9] hover:text-[#06b6d4] text-lg">
-                      {mockData.contact.email}
-                    </a>
+                    <a href={`mailto:${mockData.contact.email}`} className="text-[#0ea5e9] hover:text-[#06b6d4] text-lg">{mockData.contact.email}</a>
                   </div>
                 </div>
-                
                 <div className="flex items-start space-x-4">
-                  <div className="p-3 bg-[#0ea5e9]/10 rounded-lg">
-                    <Phone className="w-6 h-6 text-[#0ea5e9]" />
-                  </div>
+                  <div className="p-3 bg-[#0ea5e9]/10 rounded-lg"><Phone className="w-6 h-6 text-[#0ea5e9]" /></div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2 text-white">Phone</h3>
-                    <a href={`tel:${mockData.contact.phone}`} className="text-[#0ea5e9] hover:text-[#06b6d4] text-lg">
-                      {mockData.contact.phone}
-                    </a>
+                    <a href={`tel:${mockData.contact.phone}`} className="text-[#0ea5e9] hover:text-[#06b6d4] text-lg">{mockData.contact.phone}</a>
                   </div>
                 </div>
-                
                 <div className="pt-8 border-t border-[#0ea5e9]/20">
-                  <Button 
-                    onClick={() => window.location.href = `mailto:${mockData.contact.email}`}
-                    className="w-full bg-[#0ea5e9] hover:bg-[#0284c7] text-white py-6 text-lg font-semibold rounded-lg"
-                  >
+                  <Button onClick={openGmail} className="w-full bg-[#0ea5e9] hover:bg-[#0284c7] text-white py-6 text-lg font-semibold rounded-lg">
                     Send Message
                   </Button>
                 </div>
