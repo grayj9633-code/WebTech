@@ -9,21 +9,13 @@ export const mockData = {
       { text: "Hire Me", link: "#contact", primary: false }
     ]
   },
-  
+
   services: [
     {
       id: 1,
       title: "Website Design",
       description: "Custom, responsive websites built with modern technologies and best practices",
       icon: "globe"
-    },
-    {
-      id: 3,
-      title: "Summit Roofing Co. — Contractor Website Demo",
-      description: "A conversion-focused roofing website concept built as a reusable template for local service businesses. Branding, service area, contact details, and imagery are intentionally generic for portfolio use.",
-      image: "/assets/summit-roofing-demo.svg",
-      link: "https://grayj9633-code.github.io/DFW-Roofing-demo/",
-      tags: ["Local Business", "Lead Generation", "Responsive"]
     },
     {
       id: 2,
@@ -44,13 +36,13 @@ export const mockData = {
       icon: "palette"
     }
   ],
-  
+
   projects: [
     {
       id: 1,
       title: "658 Shopping Solutions",
       description: "A virtual shopping and errand service platform in Jamaica",
-      image: "/assets/placeholder-shopping.svg",
+      image: "https://customer-assets.emergentagent.com/job_tech-glow-portfolio-1/artifacts/o01mh3z6_19C93BA0-7E33-4E00-A4C8-114377125370.png",
       link: "https://errand-hub-jmd.preview.emergentagent.com/",
       tags: ["E-commerce", "Web App", "React"]
     },
@@ -61,9 +53,17 @@ export const mockData = {
       image: "https://customer-assets.emergentagent.com/job_8719ada7-caea-424b-8eaa-a662dc68aa56/artifacts/z0ukr6xt_IMG_0747.jpeg",
       link: "https://bird-speed-delivery.preview.emergentagent.com",
       tags: ["Logistics", "Web Platform", "Real-time"]
+    },
+    {
+      id: 3,
+      title: "Summit Roofing Co. — Contractor Website Demo",
+      description: "A conversion-focused roofing website concept built as a reusable template for local service businesses. Branding, service area, contact details, and imagery are intentionally generic for portfolio use.",
+      image: "/assets/summit-roofing-demo.svg",
+      link: "https://grayj9633-code.github.io/DFW-Roofing-demo/",
+      tags: ["Local Business", "Lead Generation", "Responsive"]
     }
   ],
-  
+
   about: {
     title: "About WebTech",
     bio: "I'm a full-stack developer specializing in building exceptional digital experiences. With expertise in modern web technologies and a passion for clean, efficient code, I help businesses transform their ideas into powerful, scalable applications. From concept to deployment, I deliver solutions that not only meet technical requirements but exceed user expectations.",
@@ -74,15 +74,15 @@ export const mockData = {
       { label: "Technologies", value: "20+" }
     ]
   },
-  
+
   contact: {
     email: "grayj9633@gmail.com",
     phone: "876-484-7978",
     availability: "Available for freelance work"
   },
-  
+
   footer: {
-    copyright: "© 2025 WebTech. All rights reserved.",
+    copyright: "© 2026 WebTech. All rights reserved.",
     tagline: "Building the future, one line of code at a time."
   }
 };
