@@ -58,7 +58,7 @@ export const mockData = {
       id: 3,
       title: "Summit Roofing Co. — Contractor Website Demo",
       description: "A conversion-focused roofing website concept built as a reusable template for local service businesses. Branding, service area, contact details, and imagery are intentionally generic for portfolio use.",
-      image: "/assets/summit-roofing-demo.svg",
+      image: "./assets/summit-roofing-demo.svg",
       link: "https://grayj9633-code.github.io/DFW-Roofing-demo/",
       tags: ["Local Business", "Lead Generation", "Responsive"]
     }
