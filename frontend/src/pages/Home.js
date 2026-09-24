@@ -59,7 +59,7 @@ const Home = () => {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <img 
-                src="/assets/webtech-logo.svg" 
+                src="./assets/webtech-logo.svg" 
                 alt="WebTech Logo" 
                 className="h-12 w-auto"
               />
