@@ -18,6 +18,14 @@ export const mockData = {
       icon: "globe"
     },
     {
+      id: 3,
+      title: "Summit Roofing Co. — Contractor Website Demo",
+      description: "A conversion-focused roofing website concept built as a reusable template for local service businesses. Branding, service area, contact details, and imagery are intentionally generic for portfolio use.",
+      image: "/assets/summit-roofing-demo.svg",
+      link: "https://grayj9633-code.github.io/DFW-Roofing-demo/",
+      tags: ["Local Business", "Lead Generation", "Responsive"]
+    },
+    {
       id: 2,
       title: "App Design",
       description: "Native and cross-platform mobile applications with seamless user experiences",
@@ -42,7 +50,7 @@ export const mockData = {
       id: 1,
       title: "658 Shopping Solutions",
       description: "A virtual shopping and errand service platform in Jamaica",
-      image: "https://customer-assets.emergentagent.com/job_tech-glow-portfolio-1/artifacts/o01mh3z6_19C93BA0-7E33-4E00-A4C8-114377125370.png",
+      image: "/assets/placeholder-shopping.svg",
       link: "https://errand-hub-jmd.preview.emergentagent.com/",
       tags: ["E-commerce", "Web App", "React"]
     },
